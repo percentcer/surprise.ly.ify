@@ -11,7 +11,7 @@ chrome.browserAction.onClicked.addListener(
 
         var qstring = srcURL.split("?")[1];
 
-        var ytid   = qstring.match(/v=([^&]+)/)[1];
+        var ytid   = qstring.match(/v=([^&#]+)/)[1];
 
         chrome.tabs.create({ 'url' : dstURL + ytid });
     }
