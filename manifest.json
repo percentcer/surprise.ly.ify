@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+
+    "name"        : "surprise.ly.ify",
+    "description" : "Adds one-click access to surpise.ly",
+    "version"     : "0.1",
+    
+    "permissions" : [ "tabs" ],
+
+    "browser_action" : {
+        "default_icon"  : "icon.gif"
+    },
+
+    "background" : {
+        "scripts" : ["launch.js"],
+        "persistent" : false
+    }
+}
